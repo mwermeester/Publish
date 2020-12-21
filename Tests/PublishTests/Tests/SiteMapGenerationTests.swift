@@ -24,7 +24,7 @@ final class SiteMapGenerationTests: PublishTestCase {
         let expectedLocations = [
             "https://swiftbysundell.com/one/",
             "https://swiftbysundell.com/one/item/",
-            "https://swiftbysundell.com/page"
+            "https://swiftbysundell.com/page/"
         ]
 
         for location in expectedLocations {
@@ -55,7 +55,7 @@ final class SiteMapGenerationTests: PublishTestCase {
         let expectedLocations = [
             "https://swiftbysundell.com/one/",
             "https://swiftbysundell.com/one/itemA/",
-            "https://swiftbysundell.com/pageA"
+            "https://swiftbysundell.com/pageA/"
         ]
 
         let unexpectedLocations = [
@@ -63,7 +63,7 @@ final class SiteMapGenerationTests: PublishTestCase {
             "https://swiftbysundell.com/two/",
             "https://swiftbysundell.com/two/itemC/",
             "https://swiftbysundell.com/two/itemD/",
-            "https://swiftbysundell.com/pageB"
+            "https://swiftbysundell.com/pageB/"
         ]
 
         for location in expectedLocations {

@@ -65,7 +65,7 @@ private extension SiteMapGenerator {
                 }
 
                 return .url(
-                    .loc(site.url(for: page)),
+                    .loc(site.url(for: page).appendingPathComponent("/")),
                     .changefreq(.monthly),
                     .priority(0.5),
                     .lastmod(page.lastModified)
