@@ -22,9 +22,9 @@ final class SiteMapGenerationTests: PublishTestCase {
         let siteMap = try file.readAsString()
 
         let expectedLocations = [
-            "https://swiftbysundell.com/one",
-            "https://swiftbysundell.com/one/item",
-            "https://swiftbysundell.com/page"
+            "https://swiftbysundell.com/one/",
+            "https://swiftbysundell.com/one/item/",
+            "https://swiftbysundell.com/page/"
         ]
 
         for location in expectedLocations {
