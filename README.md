@@ -161,8 +161,10 @@ extension Theme where Site == DeliciousRecipes {
 
     private struct DeliciousHTMLFactory: HTMLFactory {
         ...
-        func makeItemHTML(for item: Item<DeliciousRecipes>,
-                          context: PublishingContext<DeliciousRecipes>) throws -> HTML {
+        func makeItemHTML(
+            for item: Item<DeliciousRecipes>,
+            context: PublishingContext<DeliciousRecipes>
+        ) throws -> HTML {
             HTML(
                 .head(for: item, on: context.site),
                 .body(
@@ -265,6 +267,12 @@ $ make
 ```
 
 Then run `publish help` for instructions on how to use it.
+
+The Publish command line tool is also available via [Homebrew](https://brew.sh) and can be installed using the following command if you have Homebrew installed:
+
+```
+brew install publish
+```
 
 ## Running and deploying
 
