@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /**
 *  Publish
 *  Copyright (c) John Sundell 2021
 *  MIT license, see LICENSE file for details
 */
 
+=======
+>>>>>>> 8c23c5d (Adopt Plot's new Component-based API (#111))
 import Ink
 import Plot
 
