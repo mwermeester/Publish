@@ -7,7 +7,6 @@
 import XCTest
 import Publish
 import Plot
-import Ink
 
 final class PlotComponentTests: PublishTestCase {
     func testStylesheetPaths() {
@@ -61,10 +60,10 @@ final class PlotComponentTests: PublishTestCase {
         let html = Node.videoPlayer(for: video).render()
 
         XCTAssertEqual(html, """
-        <iframe src="https://www.youtube-nocookie.com/embed/123"\
-         frameborder="0"\
-         allowfullscreen="true"\
+        <iframe frameborder="0"\
          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
+         allowfullscreen="true"\
+         src="https://www.youtube-nocookie.com/embed/123"\
         ></iframe>
         """)
     }
@@ -74,35 +73,11 @@ final class PlotComponentTests: PublishTestCase {
         let html = Node.videoPlayer(for: video).render()
 
         XCTAssertEqual(html, """
-        <iframe src="https://player.vimeo.com/video/123"\
-         frameborder="0"\
-         allowfullscreen="true"\
+        <iframe frameborder="0"\
          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
+         allowfullscreen="true"\
+         src="https://player.vimeo.com/video/123"\
         ></iframe>
-        """)
-    }
-
-    func testRenderingMarkdownComponent() {
-        let customParser = MarkdownParser(modifiers: [
-            Modifier(target: .links) { html, _ in
-                return "<b>\(html)</b>"
-            }
-        ])
-
-        let html = Div {
-            Markdown("[First](/first)")
-            Div {
-                Markdown("[Second](/second)")
-            }
-            .markdownParser(customParser)
-        }
-        .render()
-
-        XCTAssertEqual(html, """
-        <div>\
-        <p><a href="/first">First</a></p>\
-        <div><p><b><a href="/second">Second</a></b></p></div>\
-        </div>
         """)
     }
 }
