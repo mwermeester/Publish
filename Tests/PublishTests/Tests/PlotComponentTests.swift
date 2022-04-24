@@ -62,7 +62,7 @@ final class PlotComponentTests: PublishTestCase {
         XCTAssertEqual(html, """
         <iframe frameborder="0"\
          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
-         allowfullscreen="true"\
+         allowfullscreen\
          src="https://www.youtube-nocookie.com/embed/123"\
         ></iframe>
         """)
@@ -75,7 +75,7 @@ final class PlotComponentTests: PublishTestCase {
         XCTAssertEqual(html, """
         <iframe frameborder="0"\
          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
-         allowfullscreen="true"\
+         allowfullscreen\
          src="https://player.vimeo.com/video/123"\
         ></iframe>
         """)
