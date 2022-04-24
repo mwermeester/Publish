@@ -50,14 +50,14 @@ internal struct MarkdownContentFactory<Site: Website> {
 }
 
 private extension MarkdownContentFactory {
-    func makeMetadataDecoder(for markdown: Ink.Markdown) -> MarkdownMetadataDecoder {
+    func makeMetadataDecoder(for markdown: Markdown) -> MarkdownMetadataDecoder {
         MarkdownMetadataDecoder(
             metadata: markdown.metadata,
             dateFormatter: dateFormatter
         )
     }
 
-    func makeContent(fromMarkdown markdown: Ink.Markdown,
+    func makeContent(fromMarkdown markdown: Markdown,
                      file: File,
                      decoder: MarkdownMetadataDecoder) throws -> Content {
         let title = try decoder.decodeIfPresent("title", as: String.self)
