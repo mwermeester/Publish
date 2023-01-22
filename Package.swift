@@ -17,7 +17,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/johnsundell/Ink.git", from: "0.5.1"),
-        .package(url: "https://github.com/johnsundell/Plot.git", from: "0.11.0"),
+        //.package(url: "https://github.com/johnsundell/Plot.git", from: "0.11.0"),
+        .package(url: "https://github.com/mwermeester/Plot.git", branch: "remove-twitter-meta-tags"),
         .package(url: "https://github.com/johnsundell/Files.git", from: "4.0.0"),
         .package(url: "https://github.com/johnsundell/Codextended.git", from: "0.1.0"),
         .package(url: "https://github.com/johnsundell/ShellOut.git", from: "2.3.0"),
