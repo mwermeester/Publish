@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/johnsundell/ink.git",
       "state" : {
-        "revision" : "77c3d8953374a9cf5418ef0bd7108524999de85a",
-        "version" : "0.5.1"
+        "revision" : "bcc9f219900a62c4210e6db726035d7f03ae757b",
+        "version" : "0.6.0"
       }
     },
     {
@@ -42,7 +42,7 @@
       "location" : "https://github.com/mwermeester/Plot.git",
       "state" : {
         "branch" : "remove-twitter-meta-tags",
-        "revision" : "7ce6876feff82bc34cd4393719ab5ae14e766677"
+        "revision" : "16996311daea6ec2a1ba0a953242d553aa615901"
       }
     },
     {
