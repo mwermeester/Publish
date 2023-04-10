@@ -16,7 +16,7 @@ let package = Package(
         .executable(name: "publish-cli", targets: ["PublishCLI"])
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/Ink.git", from: "0.6.0"),
+        .package(url: "https://github.com/johnsundell/Ink.git", exact: "0.6.0"),
         //.package(url: "https://github.com/johnsundell/Plot.git", exact: "0.13.0"),
         .package(url: "https://github.com/mwermeester/Plot.git", branch: "remove-twitter-meta-tags"),
         .package(url: "https://github.com/johnsundell/Files.git", from: "4.2.0"),
