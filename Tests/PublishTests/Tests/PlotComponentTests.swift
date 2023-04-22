@@ -60,10 +60,10 @@ final class PlotComponentTests: PublishTestCase {
         let html = Node.videoPlayer(for: video).render()
 
         XCTAssertEqual(html, """
-        <iframe frameborder="0"\
-         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
+        <iframe src="https://www.youtube-nocookie.com/embed/123"\
+         frameborder="0"\
          allowfullscreen\
-         src="https://www.youtube-nocookie.com/embed/123"\
+         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
         ></iframe>
         """)
     }
@@ -73,10 +73,10 @@ final class PlotComponentTests: PublishTestCase {
         let html = Node.videoPlayer(for: video).render()
 
         XCTAssertEqual(html, """
-        <iframe frameborder="0"\
-         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
+        <iframe src="https://player.vimeo.com/video/123"\
+         frameborder="0"\
          allowfullscreen\
-         src="https://player.vimeo.com/video/123"\
+         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"\
         ></iframe>
         """)
     }
