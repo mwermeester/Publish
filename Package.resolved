@@ -39,10 +39,10 @@
     {
       "identity" : "plot",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mwermeester/Plot.git",
+      "location" : "https://github.com/johnsundell/Plot.git",
       "state" : {
-        "branch" : "remove-twitter-meta-tags",
-        "revision" : "66c1e65b0b4c2a7c60ac8c0210f10579f909e847"
+        "revision" : "4237057acdaaea5def56d350815e37fa8311d1fd",
+        "version" : "0.13.0"
       }
     },
     {
